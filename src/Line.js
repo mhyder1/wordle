@@ -1,9 +1,9 @@
 import Tile from "./Tile";
-export default function Line({ word }) {
+export default function Line() {
   return (
     <div className="line">
-      {word.split("").map((letter, index) => (
-        <Tile key={index} />
+      {Array(5).fill(0).map((letter, index) => (
+        <Tile key={index}  />
       ))}
     </div>
   );
